@@ -1,0 +1,9 @@
+MyList = [x for x in input().split()]
+dict = {}
+count=0
+for i in MyList:
+    dict[i] = MyList.count(i)
+for i in dict:
+    if(dict[i]>1):
+        count=count+1
+print(count)
